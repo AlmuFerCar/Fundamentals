@@ -21,19 +21,4 @@
     <color name="paleta2_azul">#BDD9F2</color>
     <color name="paleta2_verde">#C1D9D6</color>
 
-    <palette>
-        <color name='Abstract-colored-paper-texture-background.-Minimal-geometric-shapes-and-lines-in-pastel-pink,-light-blue-and-green-colours-1' rgb='D99197' r='216' g='145' b='151' />
-        <color name='Abstract-colored-paper-texture-background.-Minimal-geometric-shapes-and-lines-in-pastel-pink,-light-blue-and-green-colours-2' rgb='594045' r='89' g='64' b='68' />
-        <color name='Abstract-colored-paper-texture-background.-Minimal-geometric-shapes-and-lines-in-pastel-pink,-light-blue-and-green-colours-3' rgb='F2BDC7' r='242' g='188' b='198' />
-        <color name='Abstract-colored-paper-texture-background.-Minimal-geometric-shapes-and-lines-in-pastel-pink,-light-blue-and-green-colours-4' rgb='BDD9F2' r='188' g='217' b='242' />
-        <color name='Abstract-colored-paper-texture-background.-Minimal-geometric-shapes-and-lines-in-pastel-pink,-light-blue-and-green-colours-5' rgb='C1D9D6' r='192' g='216' b='214' />
-    </palette>
-
-    <palette>
-        <color name='Multicolored-pastel-abstract-background.Gentle-tones-paper-texture.-Light-gradient.-The-colour-is-soft-and-romantic.--1' rgb='594C53' r='89' g='75' b='83' />
-        <color name='Multicolored-pastel-abstract-background.Gentle-tones-paper-texture.-Light-gradient.-The-colour-is-soft-and-romantic.--2' rgb='D9BACB' r='216' g='186' b='203' />
-        <color name='Multicolored-pastel-abstract-background.Gentle-tones-paper-texture.-Light-gradient.-The-colour-is-soft-and-romantic.--3' rgb='F2D5E5' r='242' g='213' b='229' />
-        <color name='Multicolored-pastel-abstract-background.Gentle-tones-paper-texture.-Light-gradient.-The-colour-is-soft-and-romantic.--4' rgb='B8D3D9' r='184' g='210' b='216' />
-        <color name='Multicolored-pastel-abstract-background.Gentle-tones-paper-texture.-Light-gradient.-The-colour-is-soft-and-romantic.--5' rgb='F2DCC9' r='242' g='220' b='201' />
-    </palette>
 </resources>
