@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toBottomOf="@id/mono"
         app:startIconDrawable="@drawable/ic_usu"
-        style="@style/compoeditable">
+        style="@style/compoeditableusu">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,14 +46,14 @@
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/username"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:startIconDrawable="@drawable/ic_email"
+        style="@style/compoeditablepass"
         >
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,14 +76,12 @@
         />-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/email"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_lock"
+        style="@style/compoeditablepass"
         >
         <EditText
             android:layout_width="match_parent"
@@ -95,14 +93,12 @@
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/repetirpassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_lock"
+        style="@style/compoeditablepass"
         >
         <EditText
             android:layout_width="match_parent"

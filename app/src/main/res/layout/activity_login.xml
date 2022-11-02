@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toBottomOf="@id/mono"
         app:startIconDrawable="@drawable/ic_usu"
-        style="@style/compoeditable">
+        style="@style/compoeditableusu">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,22 +59,19 @@
         />-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/username"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_lock"
-        >
+        style="@style/compoeditablepass">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="Password"
-            android:inputType="textPassword">
-        </EditText>
+            android:inputType="textPassword"></EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -101,6 +98,7 @@
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintTop_toBottomOf="@id/login"
         android:layout_marginTop="20px"
+        android:onClick="iniciarSignup"
         ></TextView>
 
     <androidx.constraintlayout.widget.Guideline
