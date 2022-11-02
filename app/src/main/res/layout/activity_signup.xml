@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     android:background="@color/paleta1_rosacla">
 
     <ImageView
@@ -18,37 +18,50 @@
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
 
-   <!-- <TextView
-        android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="User name"
-        android:layout_marginTop="32dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/rightguide"
-        app:layout_constraintStart_toStartOf="@id/leftguide"
-        app:layout_constraintTop_toBottomOf="@id/mono"
-        android:padding="8dp"/>-->
+    <!-- <TextView
+         android:id="@+id/username"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="User name"
+         android:layout_marginTop="32dp"
+         android:background="@color/white"
+         app:layout_constraintEnd_toEndOf="@id/rightguide"
+         app:layout_constraintStart_toStartOf="@id/leftguide"
+         app:layout_constraintTop_toBottomOf="@id/mono"
+         android:padding="8dp"/>-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toBottomOf="@id/mono"
         app:startIconDrawable="@drawable/ic_usu"
-        >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="Username">
-            </EditText>
+        style="@style/compoeditable">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Username">
+        </EditText>
     </com.google.android.material.textfield.TextInputLayout>
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:startIconDrawable="@drawable/ic_email"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
     <!--<TextView
         android:id="@+id/password"
         android:layout_width="0dp"
@@ -66,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/email"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:passwordToggleEnabled="true"
@@ -80,34 +93,39 @@
             android:inputType="textPassword">
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/repetirpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_lock"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Repetir Password"
+            android:inputType="textPassword">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/login"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="login"
-        app:layout_constraintTop_toBottomOf="@id/password"
+        android:text="Sign Up"
+        app:layout_constraintTop_toBottomOf="@id/repetirpassword"
         app:layout_constraintStart_toStartOf="@id/leftguide"
-        android:backgroundTint="@color/paleta2_rojizo"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-       />
+        style="@style/mainbutton" />
 
     <Button
         android:id="@+id/cancel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:text="Cancel"
-        android:layout_marginLeft="8dp"
         app:layout_constraintEnd_toStartOf="@id/rightguide"
         app:layout_constraintStart_toEndOf="@id/login"
         app:layout_constraintTop_toTopOf="@id/login"
-
-        android:backgroundTint="@color/paleta1_marron"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        />
+        style="@style/secondarybutton" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/leftguide"

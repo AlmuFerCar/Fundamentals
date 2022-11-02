@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/paleta1_rosacla">
+
+    <ImageView
+        android:id="@+id/mono"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/mono"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+   <!-- <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:layout_constraintTop_toBottomOf="@id/mono"
+        android:padding="8dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:layout_constraintTop_toBottomOf="@id/mono"
+        app:startIconDrawable="@drawable/ic_usu"
+        style="@style/compoeditable">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Username">
+            </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<TextView
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        android:padding="8dp"
+        />-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_lock"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:text="login"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        style="@style/mainbutton" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@id/rightguide"
+        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintTop_toTopOf="@id/login"
+        style="@style/secondarybutton" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nocuenta"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:layout_constraintEnd_toEndOf="@id/rightguide"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_marginTop="20px"
+        ></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftguide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"
+        >
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightguide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"
+        >
+    </androidx.constraintlayout.widget.Guideline>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
