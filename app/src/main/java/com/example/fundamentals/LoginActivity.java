@@ -25,9 +25,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void iniciarSignup(View v) {
         Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-       /* intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);*/ /*PARA QUE NO SE PUEDA IR HACIA ATRAS*/
-       /* intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);*/ /*PARA QUE NO SE PUEDA IR HACIA ATRAS*/
-
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); /*PARA QUE NO SE PUEDA IR HACIA ATRAS*/
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK); /*PARA QUE NO SE PUEDA IR HACIA ATRAS*/
         startActivity(intent);
 
 
